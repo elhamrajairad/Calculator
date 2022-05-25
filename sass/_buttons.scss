@@ -1,0 +1,21 @@
+.btn {
+  padding: 1rem 1.5rem;
+  background-color: var(--primary-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.7rem;
+  color: var(--light-color);
+  outline: none;
+  border: none;
+  border-radius: var(--border-radius-xlg);
+  vertical-align: baseline;
+  padding: 1.5rem 2rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--light-color);
+  box-shadow: 0 0 0 0.2rem var(--primary-color) inset;
+  transition: var(--transition);
+  color: var(--primary-color);
+}
