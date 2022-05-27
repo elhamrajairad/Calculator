@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,KAAK,AAAA,WAAW,AAAC,CACf,KAAK,CCFO,OAAO,CDGnB,gBAAgB,CAAE,OAAO,CAC1B,AAED,MAAM,EAAE,oBAAoB,EAAE,IAAI,EAChC,AAAA,KAAK,AAAA,WAAW,AAAC,CACf,KAAK,CCRK,OAAO,CDSjB,gBAAgB,CCRN,OAAO,CDSlB,AACD,AAAA,KAAK,AAAA,YAAY,AAAC,CAChB,KAAK,CCXK,OAAO,CDYjB,gBAAgB,CCbN,OAAO,CDclB",
+    "sources": [
+        "../sass/switch-them.scss",
+        "../sass/_colors.scss"
+    ],
+    "names": [],
+    "file": "switch-them.min.css"
+}

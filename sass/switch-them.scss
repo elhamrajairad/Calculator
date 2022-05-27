@@ -1,0 +1,17 @@
+@import "./colors";
+.main.dark-theme {
+  color: $white-color;
+  background-color: $dark-color;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .main.dark-theme {
+    color: $white-color;
+    background-color: $black-color;
+  }
+  .main.light-theme {
+    color: $black-color;
+    background-color: $white-color;
+  }
+}

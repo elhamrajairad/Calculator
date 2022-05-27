@@ -7,18 +7,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
     <!--icon fonts - start  -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--icon fonts - end  -->
     <!-- styles - start -->
+    <link rel="stylesheet" href="./css/main-style.min.css">
+    <link rel="stylesheet" href="./css/switch-them.min.css">
     <!-- styles - end -->
-    <title>Project Name</title>
+    <title>Calculator</title>
 </head>
 
 <body>
-    <header id="header">
+    <main id="main">
         <div class="container">
+            <div class="main">
+                <div class="main__header">
+                    <div class="rounded-shape"></div>
+                    <div class="main__body flex flex-direction-column justify-content-space-between gap-1">
+                        <div class="top-icons flex flex-direction-row">
+                            <div class="top-icon left flex flex-direction-row">
+                                <i>09:45</i>
+                            </div>
+                            <div class="top-icon right flex flex-direction-row justify-content-space-around gap-1">
+                                <i class="fa-solid fa-signal"></i>
+                                <i class="fa-solid fa-wifi"></i>
+                                <i class="fa-solid fa-battery-three-quarters"></i>
+                            </div>
+                        </div>
+                        <div class="history-icons flex flex-direction-row">
+                            <div class="history-icon left">
+                                <i class="fa-solid fa-clock "></i>
+                            </div>
+                            <div class="history-icon right">
+                                <i class="fa-solid fa-arrow-rotate-left "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__body__screen flex flex-direction-column width-100">
+                    <div class="main__body__screen__numbers">
+                        <p class="main__body__screen__bumbers__result">5+6</p>
+                    </div>
+                </div>
+                <div class="main__body__buttons grid">
+                    <button class="btn green-btn"><i>C</i></button>
+                    <button class="btn green-btn"><i>+/-</i></button>
+                    <button class="btn green-btn"><i>%</i></button>
+                    <button class="btn red-btn"><i>/</i></button>
+                    <button class="btn black-btn"><i>7</i></button>
+                    <button class="btn black-btn"><i>8</i></button>
+                    <button class="btn black-btn"><i>9</i></button>
+                    <button class="btn red-btn"><i>*</i></button>
+                    <button class="btn black-btn"><i>4</i></button>
+                    <button class="btn black-btn"><i>5</i></button>
+                    <button class="btn black-btn"><i>6</i></button>
+                    <button class="btn red-btn"><i>-</i></button>
+                    <button class="btn black-btn"><i>1</i></button>
+                    <button class="btn black-btn"><i>2</i></button>
+                    <button class="btn black-btn"><i>3</i></button>
+                    <button class="btn red-btn"><i>+</i></button>
+                    <button class="btn red-btn"><i></i></button>
+                    <button class="btn black-btn"><i>0</i></button>
+                    <button class="btn black-btn"><i>.</i></button>
+                    <button class="btn red-btn"><i>=</i></button>
+                </div>
+            </div>
+            <button class="btn-toggle">
+                <i class="fa-solid fa-moon" ></i>
+            </button>
         </div>
-    </header>
+    </main>
+    <script src="./script/toggle-them.js"></script>
 </body>
 
 </html>

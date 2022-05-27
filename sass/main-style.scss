@@ -1,0 +1,92 @@
+@import "./buttons";
+@import "./colors";
+@import "./reset";
+@import "./utility";
+.main {
+  height: 85rem;
+  width: 40rem;
+  margin: 3rem auto 2rem auto;
+  padding: 0 2rem;
+  border-radius: $border-radius-xlg;
+  background-color: $white-color;
+}
+.main__header {
+  position: relative;
+}
+.main__header::after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+.rounded-shape {
+  background-color: #183c42;
+  position: absolute;
+  right: 8rem;
+  left: 8rem;
+  height: 2rem;
+  border-radius: 0 0 4rem 4rem;
+}
+.top-icons,
+.history-icons {
+  position: relative;
+  width: 100%;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.right {
+  margin-left: auto;
+}
+.history-icon {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.main__body__screen {
+  height: 35rem;
+  align-items: flex-end;
+  align-content: flex-end;
+  justify-content: flex-end;
+  border-bottom: 1px solid #cfcfcf6b;
+  padding-bottom: 2rem;
+}
+.main__body__screen__bumbers__result {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.main__body__buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;
+  padding-top: 2rem;
+}
+.main__body__buttons .btn {
+  border-radius: $border-radius-s;
+}
+.main__body__buttons .btn:hover {
+  background-color: rgba($color: $light-gray-color, $alpha: 0.3);
+}
+.main__body__buttons .btn i {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+.green-btn i {
+  color: $green-color;
+}
+.red-btn i {
+  color: $red-color;
+}
+
+.btn-toggle {
+  background-color: rgba($color: $green-color, $alpha: 0.5);
+  border-radius: $border-radius-s;
+  padding: 1.5rem;
+  border: none;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+.btn-toggle i {
+  font-size: 1.6rem;
+  color: $white-color;
+}
