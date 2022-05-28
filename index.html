@@ -11,6 +11,9 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--icon fonts - end  -->
+    <!-- faiv icon - start -->
+    <link rel="shortcut icon" href="./images/faivicon.png" type="image/x-icon">
+    <!-- faiv icon - end -->
     <!-- styles - start -->
     <link rel="stylesheet" href="./css/main-style.min.css">
     <link rel="stylesheet" href="./css/switch-them.min.css">
@@ -47,38 +50,39 @@
                 </div>
                 <div class="main__body__screen flex flex-direction-column width-100">
                     <div class="main__body__screen__numbers">
-                        <p class="main__body__screen__bumbers__result">5+6</p>
+                        <p class="main__body__screen__bumbers__result">0</p>
                     </div>
                 </div>
                 <div class="main__body__buttons grid">
-                    <button class="btn green-btn"><i>C</i></button>
-                    <button class="btn green-btn"><i>+/-</i></button>
-                    <button class="btn green-btn"><i>%</i></button>
-                    <button class="btn red-btn"><i>/</i></button>
-                    <button class="btn black-btn"><i>7</i></button>
-                    <button class="btn black-btn"><i>8</i></button>
-                    <button class="btn black-btn"><i>9</i></button>
-                    <button class="btn red-btn"><i>*</i></button>
-                    <button class="btn black-btn"><i>4</i></button>
-                    <button class="btn black-btn"><i>5</i></button>
-                    <button class="btn black-btn"><i>6</i></button>
-                    <button class="btn red-btn"><i>-</i></button>
-                    <button class="btn black-btn"><i>1</i></button>
-                    <button class="btn black-btn"><i>2</i></button>
-                    <button class="btn black-btn"><i>3</i></button>
-                    <button class="btn red-btn"><i>+</i></button>
-                    <button class="btn red-btn"><i></i></button>
-                    <button class="btn black-btn"><i>0</i></button>
-                    <button class="btn black-btn"><i>.</i></button>
-                    <button class="btn red-btn"><i>=</i></button>
+                    <button class="btn green-btn" id="clear"><i>C</i></button>
+                    <button class="btn green-btn" id='modular'><i>+/-</i></button>
+                    <button class="btn green-btn" id="remainder"><i>%</i></button>
+                    <button class="btn red-btn" id="divider"><i>&#247;</i></button>
+                    <button class="btn black-btn" data-input="7"><i>7</i></button>
+                    <button class="btn black-btn" data-input="8"><i>8</i></button>
+                    <button class="btn black-btn" data-input="9"><i>9</i></button>
+                    <button class="btn red-btn" id="power"><i>*</i></button>
+                    <button class="btn black-btn" data-input="4"><i>4</i></button>
+                    <button class="btn black-btn" data-input="5"><i>5</i></button>
+                    <button class="btn black-btn" data-input="6"><i>6</i></button>
+                    <button class="btn red-btn" id="minus"><i>-</i></button>
+                    <button class="btn black-btn" data-input="1"><i>1</i></button>
+                    <button class="btn black-btn" data-input="2"><i>2</i></button>
+                    <button class="btn black-btn" data-input="3"><i>3</i></button>
+                    <button class="btn red-btn" id="plus"><i>+</i></button>
+                    <button class="btn red-btn" id="backspace"><i>&#8592;</i></button>
+                    <button class="btn black-btn" data-input="0"><i>0</i></button>
+                    <button class="btn black-btn" data-input="."><i>.</i></button>
+                    <button class="btn red-btn" id="equal"><i>=</i></button>
                 </div>
             </div>
             <button class="btn-toggle">
-                <i class="fa-solid fa-moon" ></i>
+                <i class="fa-solid fa-moon"></i>
             </button>
         </div>
     </main>
     <script src="./script/toggle-them.js"></script>
+    <script src="./script/calculator.js"></script>
 </body>
 
 </html>
