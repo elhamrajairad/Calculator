@@ -2,7 +2,7 @@ let display = document.querySelector(".main__body__screen__bumbers__result");
 let buttons = document.querySelector(".main__body__buttons");
 let numbers = document.querySelectorAll(".black-btn");
 let clearDisplay = document.querySelector("#clear");
-let modular = document.querySelector("#modular");
+let absult = document.querySelector("#absult");
 let remainder = document.querySelector("#remainder");
 let divider = document.querySelector("#divider");
 let power = document.querySelector("#power");
@@ -38,15 +38,18 @@ function inputNumber(event) {
     }
   }
   if (display.textContent.length > 9) {
-    display.classList.add('font-m')
+    display.classList.add("font-m");
   }
 }
 
-modular.addEventListener("click", function (e) {
-  lastOparation = "modular";
-  memory = Number(display.textContent);
-  display.textContent = 0;
-});
+// absult.addEventListener("click", () => {
+//   lastOparation = "+/-";
+//   if (Number(display.textContent > 0)) {
+//     memory = Number(-display.textContent);
+//   }
+//   display.textContent = 0;
+//   console.log(memory);
+// });
 remainder.addEventListener("click", function (e) {
   lastOparation = "remainder";
   memory = Number(display.textContent);
@@ -85,9 +88,6 @@ equal.addEventListener("click", function () {
     } else if (lastOparation === "minus") {
       display.textContent = memory - number;
     } else if ((lastOparation = "plus")) {
-      display.textContent = memory + number;
-    } else if (lastOparation == "remainder") {
-      number = Math.abs(number);
       display.textContent = memory + number;
     }
     lastOparation = "";
