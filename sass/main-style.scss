@@ -66,14 +66,14 @@
 .main__body__buttons .btn:hover {
   background-color: rgba($color: $light-gray-color, $alpha: 0.3);
 }
-.main__body__buttons .btn i {
+.main__body__buttons .btn {
   font-size: 2.3rem;
   font-weight: 500;
 }
-.green-btn i {
+.green-btn {
   color: $green-color;
 }
-.red-btn i {
+.red-btn {
   color: $red-color;
 }
 
