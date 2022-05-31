@@ -40,6 +40,9 @@ function inputNumber(event) {
   if (display.textContent.length > 9) {
     display.classList.add("font-m");
   }
+  if (display.textContent.length > 30) {
+    display.classList.add("font-s");
+  }
 }
 
 // absult.addEventListener("click", () => {
